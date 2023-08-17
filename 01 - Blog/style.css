@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;500;600&display=swap');
+:root {
+     --gradient: linear-gradient(90deg, #f5f5f5 0%, #f5f5f5 50%, #ffffff 50%, #ffffff 100%);
+     --corTitulo: #1A202C;
+     --branco: #ffffff;
+     --grey: #717171;
+     --bgBranco: #F3F5F7;
+    --lexendDecaFont: "Lexend Deca", sans-serif;
+
+
+    
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.gradient {
+    background: var(--gradient);
+}
+
+.corTitulo {
+    color: var(--corTitulo);
+}
+
+.branco {
+    color: var(--branco);
+}
+
+.grey {
+    color: var(--grey);
+}
+
+.bgBranco {
+    background-color: var(--bgBranco);
+}
+
+.font-15 {
+    font-family: var(--lexendDecaFont);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.font-1625 {
+    font-family: var(--lexendDecaFont);
+    font-size: 1.625rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.font-1125 {
+    font-family: var(--lexendDecaFont);
+    font-size: 1.125rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.font-1{
+    font: var(--lexendDecaFont) 1rem/1.5rem;
+}
+
+.container {
+    margin:  0 auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+
+}
+
+header{
+    background: linear-gradient(45deg, #574AE8 0%, #3EA1DB 100%);
+    padding: 40px 0;
+}
+
+header .container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 4.5rem;
+
+}
+
+header input{
+    width: 100%;
+    border-radius: 4px;
+    padding: 1rem 1rem 1rem 63px;
+    background: rgba(255, 255, 255, 0.20);
+    border: none;
+
+
+}
+
+header input::placeholder{
+    color: var(--branco);
+    opacity: 0.5;
+}
+.input-div{
+    position: relative;
+        grid-column: span 2;
+}
+
+.input-div::before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0.8rem;
+    left: 1rem;
+    background: url('image/search.svg');
+    width: 30px;
+    height: 30px;
+
+    
+}
+
+main{
+    padding: 100px 0;
+    background-color: var(--bgBranco);
+}
+
+article{
+    display: grid;
+    gap: 50px
+}
+
+section {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 25px;
+    background: var(--branco);
+    border-radius: 4px;
+
+}
+
+.col-2{
+    grid-column: span 2;
+}	
+
+section span,svg{
+    margin-bottom: 20px;
+}
+
+#icon {
+    fill: #574ae801;
+    stroke: #574ae8;
+    stroke-width: 7;
+    transition: fill 0.3s;
+    cursor: pointer;
+
+}
+#icon.filled,
+#icon:hover {
+    fill: #574ae8;
+}
+
+section h2 {
+    margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 50px 0;
+    }
+
+    .font-1{
+        font-size: 0.8rem;
+    }
+
+    .font-1125{
+        font-size: 0.8rem; 
+    }
+
+    .font-1625{
+        font-size: 1.25rem;
+    }
+
+    header .container{
+        gap: 40px;
+    }
+
+    section {
+        padding: 1rem;
+    }
+}

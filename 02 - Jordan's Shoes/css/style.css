@@ -1,0 +1,187 @@
+:root{
+    --main-color: #00AEFF;
+    --white: #f9f9f9;
+    --black: #181818;
+    --grey: #474747;
+    --light-grey-bg: #EBE9EA;
+    
+}
+
+.white {
+    color: var(--white);
+}
+
+.black {
+    color: var(--black);
+}
+
+.grey {
+    color: var(--grey);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body{
+    background-color: var(--white);
+}
+
+.font-1-xl{
+    font: 700 2rem 'Montserrat', sans-serif;
+}
+
+.font-1-l {
+    font: 600 2rem 'Montserrat', sans-serif;
+}
+
+.font-2-m{
+    font: 500 1.2rem 'Roboto Serif';
+}
+
+.font-2-s {
+    font: 500 1.25rem 'Roboto Serif';
+}
+
+header{
+    color: var(--black);
+
+}
+
+header div:nth-child(1){
+    background-color: var(--main-color);
+    font: 600 1rem/1.5 'Montserrat', sans-serif;
+    padding: 20px;
+    text-align: center;    
+}
+
+header div:nth-child(2){
+    background-color: var(--white);
+    padding: 20px;
+    text-align: center;
+    font: 600 1.5rem 'Montserrat', sans-serif;
+}
+
+section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../image/wallpaper.jpeg);
+    min-height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    align-items: center;
+    
+    
+}
+
+section .container {
+    padding: 100px 20px;
+    max-width: 1200px;
+    text-align: left;
+  
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+section h1{
+    margin-bottom: 16px;
+}
+
+section div div {
+    max-width: 400px;
+}
+
+#typed {
+    
+        font: 500 1.2rem 'Roboto Serif';
+}
+
+article{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 60px 20px 160px 20px;
+}
+
+article h2 {
+    
+    margin-bottom: 16px;
+}
+
+article p {
+    padding-bottom: 60px;
+}
+
+article .shoes-img{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, max-content));
+    gap: 40px 20px;
+
+}
+
+.shoes-img div {
+    padding: 80px 20px;
+    background-color: var(--light-grey-bg);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.shoes-img div img {
+    transition: transform 0.5s ease;
+}
+
+.shoes-img div img:hover {
+    transform: scale(1.1);  
+}
+
+footer{
+    background-color: var(--main-color);
+    padding: 20px;
+    text-align: center;
+    color: var(--black);
+    font: 600 1rem 'Montserrat', sans-serif;
+}
+
+@media(max-width: 600px){
+    header div:nth-child(1),footer{
+        font-size: 0.8rem;
+        padding: 10px 20px;
+    }
+
+    header div:nth-child(2){
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+
+    section {
+    min-height: 300px;
+    }
+
+    article p{
+        padding-bottom: 40px;
+    }
+
+    article .shoes-img{
+        grid-template-columns: repeat(auto-fit, minmax(150px, max-content));
+        gap: 20px 10px;
+    }
+
+    article .shoes-img div {
+        padding: 40px 10px;
+    }
+
+    .font-2-s {
+        font-size: 1rem;
+    }
+}
