@@ -11,9 +11,20 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: gold
+    list-style: none;
+    text-decoration: none;
 
 }
+
+button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: none;
+    
+}
+
+
 
 .font-1-s{
    font: 500 1.2rem 'Inter', sans-serif;
@@ -23,7 +34,7 @@
     font: 500 1.2rem 'Poppins', sans-serif;
 }
 
-.white-color{
+.white{
     color: var(--white-color);
 }
 

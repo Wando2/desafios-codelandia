@@ -1,0 +1,147 @@
+header {
+    background-color: var(--main-color);
+    padding: 0px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    overflow: hidden;
+}
+
+nav {
+    display: flex;
+    gap: var(--padding60);
+    align-items: center;
+
+    }
+
+nav ul,.bell,.tab-options{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+
+}
+
+nav li {
+    padding: 17px 10px;
+    color: white;
+  
+}
+
+nav li a {
+    color: inherit;
+}
+
+nav li a::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #0094FF;
+    transition: 0.5s;
+    position: relative;
+    top: 25px;
+}
+
+nav li a:hover::after {
+    width: 100%;
+}
+
+
+.icons{
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    gap: 60px;
+    align-items: center;
+    max-width: 450px;
+    justify-self: end;
+    grid-area: 1/2;
+}
+
+.user-options{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.bell button:nth-child(1){
+    background: #0094FF3D;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.bell button{
+    position: relative;
+}
+
+.bell button:nth-child(1)::after{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #0094FF;
+    border-radius: 50%;
+    top: 2px;
+    right: 2px;
+    transition: 0.5s;
+}
+
+
+.user-options img:nth-child(1) {
+    border-radius: 50%;
+
+    
+    
+}
+
+.user-options div {
+        position: relative;
+}
+
+.user-options div::after{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #33FF00;
+    border-radius: 50%;
+    top: 30px;
+    right: 2px;
+    transition: 0.5s;
+}
+
+.user-options div:hover::after, .bell button:hover::after{
+background: transparent;
+    
+}
+
+
+.bell button:nth-child(2) {
+   
+    padding: 8px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+.bell button:nth-child(2):hover{
+    background: #0094FF3D;
+}
+
+.hidden{
+    
+    transition: 0.3s ease-in-out;
+    
+}
+
+.dp-none{
+  padding-top: 8rem;
+  max-height: 0;
+}
+
+.header-extend{
+    height: 60px;
+    
+}
+

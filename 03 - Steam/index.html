@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Steam Store</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -13,12 +13,13 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="img/steam.svg" alt="">
-        </div>
+       
 
-            <nav>
-                <ul>
+            <nav class="hidden">
+                <div class="logo">
+                   <a href="index.html"><img src="img/steam.svg" alt=""></a> 
+                </div>
+                <ul class="font-1-s">
                 <li><a href="#">Store</a></li>
                 <li><a href="#">Community</a></li>
                 <li><a href="#">About</a></li>
@@ -27,26 +28,33 @@
             </nav>
      
 
-        
-            <div class="bell">
-                <img src="img/bell.svg" alt="bell" width="40px" height="40px">
-                <img src="img/message-circle.svg" alt="msg" width="40px" height="40px">
+            <div class="icons ">          
+            <div class="bell hidden">
+                <button><img src="img/bell.svg" alt="bell" width="24px" height="24px"></button>
+                <button><img src="img/message-circle.svg" alt="msg" width="24px" height="24px"></button>
             </div>
 
-            <div class="user-options"> 
-                <img src="img/1.png" alt="user" width="40px" height="40px">
+            <div class="user-options hidden"> 
+                <div>
+                    <img src="img/1.png" alt="user" width="40px" height="40px">
+                </div>
+                
                 <button><img src="img/arrow.svg" alt="user options"></button alt="user options">
             </div>
             
             <div class="tab-options">
-                <button><img src="img/x.svg" alt="steam" width="40px" height="40px"></button>
-                <button><img src="img/copy.svg" alt="search" width="40px" height="40px"></button>
-                <button><img src="img/plus.svg" alt="us" width="40px" height="40px"></button>
+              
+            
+                <button><img src="img/plus.svg" alt="us" width="24px" height="24px"></button>
+                <button><img src="img/copy.svg" alt="search" width="24px" height="24px"></button>
+                <button><img src="img/x.svg" alt="steam" width="24px" height="24px"></button>
             </div>
-
+            </div>
 
 
     </header>
 
+
+<script src="js/script.js"></script>
 </body>
 </html>
