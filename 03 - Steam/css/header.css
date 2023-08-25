@@ -13,6 +13,7 @@ nav {
     display: flex;
     gap: var(--padding60);
     align-items: center;
+    gap: 40px;
 
     }
 

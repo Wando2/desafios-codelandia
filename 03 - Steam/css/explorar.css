@@ -1,0 +1,88 @@
+.explorar{
+    padding: 120px 20px 60px 20px;
+}
+
+
+
+.explorar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding: 15px 30px;
+    background-color: var(--main-color);
+    width: 100%;
+    border-radius: 4px;
+    
+}
+
+.explorar ul .active button::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-hover);
+    position: relative;
+    top: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.explorar button{
+    text-transform: uppercase;
+}
+
+.explorar input{
+    display: block;
+    width: 100%;
+    padding: 20px 40px;
+    border-radius: 4px;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    font: 500 1.2rem 'Inter', sans-serif;
+    margin-bottom: 80px;
+    outline: none;
+    border: none;
+    background-image: url('../img/search.svg');
+        background-repeat: no-repeat;
+        background-position: right 20px center;
+
+}
+
+.explorar input::placeholder{
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+
+.explorar input:focus {
+    box-shadow: 0 0 0 2px var(--color-hover);
+    outline: none;
+}
+
+.explorar .novidades{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, max-content));
+    gap: 20px 40px;
+    justify-content: center;
+
+    }
+
+
+
+  @media (max-width: 650px){
+    .explorar .novidades{
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }  
+
+
+  footer{
+    padding: 20px;
+    background-color: var(--main-color);
+    display: flex;
+    place-items: center;
+
+  }
+
+  footer div{
+    margin: 0 auto;
+  }
