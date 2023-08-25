@@ -1,6 +1,6 @@
 :root{
-    --padding90: 90px;
-    --padding60: 60px;
+    --p90: 90px;
+    --p60: 60px;
     --main-color: #1B2838;
     --color-hover: #0094FF;
     --white-color: #fff;
@@ -24,6 +24,11 @@ button{
     
 }
 
+body{
+    background-color: var(--bg);
+    
+}
+
 
 
 .font-1-s{
@@ -37,4 +42,35 @@ button{
 .white{
     color: var(--white-color);
 }
+
+.container {
+    max-width: 1200px;
+    padding: 0px 20px;
+    margin: 0 auto;
+
+}
+
+img {
+    max-width: 100%;
+   
+    
+}
+
+
+.btn {
+    padding: 18px 32px;
+    border-radius: 4px;
+    background-color: var(--color-hover);
+    cursor: pointer;
+    color: var(--white-color);
+    font: 500 1.2rem 'Inter', sans-serif;
+    transition: 0.5s;
+    display: inline-block;
+
+}
+
+.btn:hover {
+    background-color: #0077FF;
+}
+
 

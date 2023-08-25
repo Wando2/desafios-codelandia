@@ -5,9 +5,11 @@ console.log(buttons);
 function showitens() {
     console.log('clicou');
     const hiddenItens = document.querySelectorAll('header .hidden')
-    console.log(hiddenItens);
     const tab = document.querySelector('.tab-options')
     const header = document.querySelector('header')
+    const tabOptions = document.querySelector('.tab-options')
+
+    tab.classList.toggle('menuToggle');
     header.classList.toggle('header-extend');
 
     

@@ -20,6 +20,7 @@ nav ul,.bell,.tab-options{
     display: flex;
     gap: 32px;
     align-items: center;
+    transition: 0.5s;
 
 }
 
@@ -57,6 +58,7 @@ nav li a:hover::after {
     max-width: 450px;
     justify-self: end;
     grid-area: 1/2;
+    position: relative;
 }
 
 .user-options{
@@ -145,3 +147,40 @@ background: transparent;
     
 }
 
+.menuToggle{
+   position: relative;
+   top: -30px;
+   
+}
+
+#btn-menu{
+    display: none;
+}
+
+@media (max-width: 900px){
+
+    header{
+        grid-template-columns: 1fr;
+        
+    }
+    nav{
+        display: none;
+    }
+
+    .tab-options{
+        display: none;
+    }
+
+    #btn-menu{
+        display: block;
+       justify-self: start;
+    }
+    
+}
+
+@media (max-width:500px){
+    .bell{
+        display: none;
+    }
+
+}
