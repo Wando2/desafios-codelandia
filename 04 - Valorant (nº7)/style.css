@@ -129,6 +129,18 @@ button::after{
     grid-area: 1/4/4/8;
 }
 
+.character-photo img{
+   
+    transition: all 0.5s ease-in-out;
+        transform: scale(1);
+        opacity: 1;
+}
+
+.character-photo img.enlarge {
+  transform: scale(0.6);
+  opacity: 0.6;
+}
+ 
 @media (max-width: 768px){
 
   body{
@@ -148,5 +160,9 @@ button::after{
 
     .main-logo{
         display: none;
+    }
+
+    .font{
+        font-size: 1rem;
     }
 }
